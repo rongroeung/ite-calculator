@@ -1,6 +1,6 @@
 /**
  * Author: Theng Rathrongroeung
- * This class provides basic arithmetic operations. aa
+ * This class provides basic arithmetic operations.
  * Methods include addition, subtraction, multiplication, division, and modulus.
  */
 public class Arithmetic {
