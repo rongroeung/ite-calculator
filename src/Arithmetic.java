@@ -1,6 +1,6 @@
 /**
  * Author: Theng Rathrongroeung
- * The {@code Arithmetic} class provides basic arithmetic operations.
+ * This class provides basic arithmetic operations.
  * Methods include addition, subtraction, multiplication, division, and modulus.
  */
 public class Arithmetic {
