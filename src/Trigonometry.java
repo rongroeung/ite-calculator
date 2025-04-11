@@ -11,7 +11,7 @@ public class Trigonometry {
      * @param radian the angle in radians
      * @return the sine value
      */
-    public float sin(float radian) {
+    public static float sin(float radian) {
         return (float) Math.sin(radian);
     }
 
@@ -21,7 +21,7 @@ public class Trigonometry {
      * @param degree the angle in degrees
      * @return the sine value
      */
-    public float sind(int degree) {
+    public static float sind(int degree) {
         return (float) Math.sin(Math.toRadians(degree));
     }
 
@@ -31,7 +31,7 @@ public class Trigonometry {
      * @param radian the angle in radians
      * @return the cosine value
      */
-    public float cos(float radian) {
+    public static float cos(float radian) {
         return (float) Math.cos(radian);
     }
 
@@ -41,7 +41,7 @@ public class Trigonometry {
      * @param degree the angle in degrees
      * @return the cosine value
      */
-    public float cosd(int degree) {
+    public static float cosd(int degree) {
         return (float) Math.cos(Math.toRadians(degree));
     }
 
@@ -51,7 +51,7 @@ public class Trigonometry {
      * @param radian the angle in radians
      * @return the tangent value
      */
-    public float tan(float radian) {
+    public static float tan(float radian) {
         return (float) Math.tan(radian);
     }
 
@@ -61,7 +61,7 @@ public class Trigonometry {
      * @param degree the angle in degrees
      * @return the tangent value
      */
-    public float tand(int degree) {
+    public static float tand(int degree) {
         return (float) Math.tan(Math.toRadians(degree));
     }
 
@@ -71,7 +71,7 @@ public class Trigonometry {
      * @param x the long integer
      * @return the square of the number
      */
-    public long square2(long x) {
+    public static long square2(long x) {
         return x * x;
     }
 
@@ -81,7 +81,7 @@ public class Trigonometry {
      * @param x the double value
      * @return the square of the number
      */
-    public double square2(double x) {
+    public static double square2(double x) {
         return x * x;
     }
 
@@ -91,7 +91,7 @@ public class Trigonometry {
      * @param x the long integer
      * @return the cube of the number
      */
-    public long square3(long x) {
+    public static long square3(long x) {
         return x * x * x;
     }
 
@@ -101,7 +101,7 @@ public class Trigonometry {
      * @param x the double value
      * @return the cube of the number
      */
-    public double square3(double x) {
+    public static double square3(double x) {
         return x * x * x;
     }
 
@@ -111,7 +111,7 @@ public class Trigonometry {
      * @param degree the angle in degrees
      * @return the angle converted to radians
      */
-    public double degree2Radian(int degree) {
+    public static double degree2Radian(int degree) {
         return Math.toRadians(degree);
     }
 
@@ -121,7 +121,7 @@ public class Trigonometry {
      * @param radian the angle in radians
      * @return the angle converted to degrees
      */
-    public int radian2Degree(double radian) {
+    public static int radian2Degree(double radian) {
         return (int) Math.toDegrees(radian);
     }
 }

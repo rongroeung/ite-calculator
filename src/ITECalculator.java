@@ -27,7 +27,7 @@ public class ITECalculator {
                 case 2 -> trigonometricMenu();
                 case 3 -> bitwiseMenu();
                 case 0 -> {
-                    System.out.println("Exiting the program. Goodbye!");
+                    System.out.println("Exiting the program. Good bye!");
                     return;
                 }
                 default -> System.out.println("Invalid choice. Please try again.");
@@ -73,7 +73,7 @@ public class ITECalculator {
 
     /**
      * Displays a submenu for trigonometric operations.
-     * Allows the user to perform operations like sin, cos, and tan.
+     * Allows the user to perform operations like sin, cos, tan, etc.
      */
     private static void trigonometricMenu() {
         Scanner sc = new Scanner(System.in);
@@ -84,19 +84,76 @@ public class ITECalculator {
         System.out.println("4. Cos in Degree");
         System.out.println("5. Tan in Radian");
         System.out.println("6. Tan in Degree");
+        System.out.println("7. Power of 2 with Integer");
+        System.out.println("8. Power of 2 with Floating Point");
+        System.out.println("9. Power of 3 with Integer");
+        System.out.println("10. Power of 3 with Floating Point");
+        System.out.println("11. Convert from Degree to Radian");
+        System.out.println("12. Convert from Radian to Degree");
         System.out.print("Choose an option: ");
         int choice = sc.nextInt();
 
-        System.out.print("Enter the number: ");
-        double number = sc.nextDouble();
-
         switch (choice) {
-            case 1 -> System.out.println("Result: " + Math.sin(number));
-            case 2 -> System.out.println("Result: " + Math.sin(Math.toRadians(number)));
-            case 3 -> System.out.println("Result: " + Math.cos(number));
-            case 4 -> System.out.println("Result: " + Math.cos(Math.toRadians(number)));
-            case 5 -> System.out.println("Result: " + Math.tan(number));
-            case 6 -> System.out.println("Result: " + Math.tan(Math.toRadians(number)));
+            case 1 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                float number = sc.nextFloat();
+                System.out.println("Result: " + Trigonometry.sin(number));
+            }
+            case 2 -> {
+                System.out.print("Enter the number (integer number): ");
+                int number = sc.nextInt();
+                System.out.println("Result: " + Trigonometry.sind(number));
+            }
+            case 3 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                float number = sc.nextFloat();
+                System.out.println("Result: " + Trigonometry.cos(number));
+            }
+            case 4 -> {
+                System.out.print("Enter the number (integer number): ");
+                int number = sc.nextInt();
+                System.out.println("Result: " + Trigonometry.cosd(number));
+            }
+            case 5 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                float number = sc.nextFloat();
+                System.out.println("Result: " + Trigonometry.tan(number));
+            }
+            case 6 -> {
+                System.out.print("Enter the number (integer number): ");
+                int number = sc.nextInt();
+                System.out.println("Result: " + Trigonometry.tand(number));
+            }
+            case 7 -> {
+                System.out.print("Enter the number (integer number): ");
+                long number = sc.nextLong();
+                System.out.println("Result: " + Trigonometry.square2(number));
+            }
+            case 8 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                double number = sc.nextDouble();
+                System.out.println("Result: " + Trigonometry.square2(number));
+            }
+            case 9 -> {
+                System.out.print("Enter the number (integer number): ");
+                long number = sc.nextLong();
+                System.out.println("Result: " + Trigonometry.square3(number));
+            }
+            case 10 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                double number = sc.nextDouble();
+                System.out.println("Result: " + Trigonometry.square3(number));
+            }
+            case 11 -> {
+                System.out.print("Enter the number (integer number): ");
+                int number = sc.nextInt();
+                System.out.println("Result: " + Trigonometry.degree2Radian(number));
+            }
+            case 12 -> {
+                System.out.print("Enter the number (floating-point number): ");
+                double number = sc.nextDouble();
+                System.out.println("Result: " + Trigonometry.radian2Degree(number));
+            }
             default -> System.out.println("Invalid choice.");
         }
     }
